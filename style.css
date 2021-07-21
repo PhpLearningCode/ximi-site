@@ -648,6 +648,7 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
+	position: fixed;
 	padding: 20px 0 20px 0;
 	border: 1px solid #737380;
 	border-left-width: 0px;
@@ -655,7 +656,8 @@ textarea {
 	border-top-width: 0px;
 	display: block;
 	width: 100%;
-	background-color: #111;
+	background-image: linear-gradient(to right, #121214 , #28203e);
+	z-index: 999;
 }
 
 .main-navigation ul {
@@ -995,8 +997,9 @@ textarea {
 }
 
 .site-footer {
-	position: absolute;
+	position: fixed;
 	justify-content: center;
+	color: #e1e1e6;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -1007,6 +1010,7 @@ textarea {
 	border-left-width: 0px;
 	border-bottom-width: 0px;
 	background-color: #121214;
+	background-image: linear-gradient(to right, #121214 , #28203e);
 	z-index: 999;
 }
 
