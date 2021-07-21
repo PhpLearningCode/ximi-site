@@ -28,7 +28,7 @@
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
 			<div class="header-logo">
-				<?php the_custom_logo(  ) ?>
+				<img src="<?php  echo get_header_image(  ) ?>" width="200" height="100" />
 			</div>
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ximi-dogs' ); ?></button>
 			<?php

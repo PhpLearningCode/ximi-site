@@ -140,8 +140,14 @@ add_action( 'widgets_init', 'ximi_dogs_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ximi_dogs_scripts() {
+
+	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/inc/bootstrap/js/bootstrap.min.js', array(), _S_VERSION, true);
+
 	wp_enqueue_style( 'ximi-dogs-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'ximi-dogs-style', 'rtl', 'replace' );
+
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/inc/bootstrap/css/bootstrap.min.css', array(), _S_VERSION );
+
 
 	wp_enqueue_script( 'ximi-dogs-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
